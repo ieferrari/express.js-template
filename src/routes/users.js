@@ -1,6 +1,14 @@
 const express = require('express')
 const router = express.Router()
 
+router.post('/register', (req, res)=>{
+    if(!req.body.name){
+        res.status(400).json("need to pass name");
+        return;
+    }
+    res.sendStatus(201);
+})
+
 router.get('/new', (req, res) =>{
     console.log("/user/new")
     res.render("index", {text:"word"})
