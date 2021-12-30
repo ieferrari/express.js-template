@@ -2,7 +2,22 @@
 
 Basic template for Node js Express server
 
+***
+#  File structure
 
+    .
+    ├── index.js
+    ├── config.js
+    ├── controllers
+    ├── db
+    ├── middlewares
+    ├── models
+    ├── routes
+    ├── utils
+    └── views
+
+
+***
 # Docker
 
 ## Basic image build
